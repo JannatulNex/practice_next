@@ -60,13 +60,13 @@ export default function FormWithReactHookFormAndZod() {
           <p className="text-red-500">{`${errors.password.message}`}</p>
         )}
         <input
-          {...register("comfrimPassword")}
+          {...register("confrimPassword")}
           type="password"
           placeholder="Confrim password"
           className="px-4 py-2 rounded text-black"
         />
-        {errors.comfrimPassword && (
-          <p className="text-red-500">{`${errors.comfrimPassword.message}`}</p>
+        {errors.confrimPassword && (
+          <p className="text-red-500">{`${errors.confrimPassword.message}`}</p>
         )}
         <button
           type="submit"
